@@ -21,7 +21,7 @@ nav ul li {
   padding: 0 16px;
 }
 
-span {
+header span {
   font-weight: bold;
 }
 
@@ -107,25 +107,29 @@ h3 {
 .mainlateral {
   width: 40%;
   border-left: lightgray 1px solid;
+  padding-top: 16px;
 }
 
 .lateral, .lateral3 {
-  width: 100%;
+  width: 95%;
   display: flex;
   padding: 16px;
   align-items: center;
+  border-bottom: lightgray 1px solid;
 }
 
 .lateral3 {
   background-color: lightgray;
 }
 
-.lateralimage {
-  width: 35%;
+.lateralimage img {
+  width: 80%;
+  height: auto;
 }
 
 .lateraltext {
   width: 65%;
+  height: auto;
 }
 
 .lateraltext p {
