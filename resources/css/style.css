@@ -1,9 +1,14 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
 /* Logo section */
 
 #logo {
   display: flex;
-  padding: 16px 24px;
-  font-size: 32px;
+  padding: 1.25em 2em;
   max-width: 100%;
   align-items: center;
   justify-content: space-between;
@@ -11,6 +16,11 @@
 
 .logoandname {
   display: flex;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.5em;
 }
 
 nav ul {
@@ -18,7 +28,8 @@ nav ul {
 }
 
 nav ul li {
-  padding: 0 16px;
+  padding: 0 .625em;
+  font-size: 1em;
 }
 
 header span {
@@ -35,14 +46,14 @@ header span {
 
 .content {
   display: flex;
-  padding: 32px 24px;
+  padding: 2.67em 2em;
   justify-content: space-between;
 }
 
 .topimage {
   display: flex;
   max-width: 60%;
-  margin-right: 24px;
+  margin-right: 0;
 }
 
 .textandbutton {
@@ -55,33 +66,45 @@ header span {
 .button {
   background-color: gray;
   width: 80%;
-  margin: 30px 0;
+  margin: 2.5em 0;
   text-align: center;
 }
 
 h1 {
-  font-size: 32px;
+  font-size: 2.67em;
   font-weight: 900;
 }
 
+h2 {
+  font-size: 2em;
+  padding: 1em 0;
+}
+
 h4 {
-  padding: 8px 0;
+  padding: 0.75em 0;
   color: white;
+  font-size: 1.5em;
 }
 
 .quote span {
   font-weight: normal;
+  font-size: 1.25em;
 }
 
 .maintext p {
   font-weight: bold;
-  padding: 24px 0;
+  padding: 2em 0;
 }
 
 /* First block - Information */
 
 h3 {
   font-weight: bold;
+  font-size: 2em;
+}
+
+p {
+  line-height: 1.5;
 }
 
 #information {
@@ -91,7 +114,7 @@ h3 {
 
 .main {
   display: block;
-  padding: 32px 24px;
+  padding: 2.67em 2em;
   width: 60%;
 }
 
@@ -101,19 +124,19 @@ h3 {
   }
 
 .maintext h1 {
-  padding: 32px 0 24px 0;
+  padding: 1.5em 0 1em 0;
 }
 
 .mainlateral {
   width: 40%;
   border-left: lightgray 1px solid;
-  padding-top: 16px;
+  padding-top: 1.25em;
 }
 
 .lateral, .lateral3 {
   width: 95%;
   display: flex;
-  padding: 16px;
+  padding: 1.25em;
   align-items: center;
   border-bottom: lightgray 1px solid;
 }
@@ -133,15 +156,91 @@ h3 {
 }
 
 .lateraltext p {
-  padding: 8px 0;
+  padding: 0.75em 0;
+  font-size: 1.25em;
+}
+
+/* Second block - Learning */
+
+#learning {
+  background-color: lightgray;
+  padding: 2.67em 6em;
+}
+
+.title h1 {
+  padding: 2.67em auto;
+  text-align: center;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: auto;
+}
+
+.block {
+  margin: 1.5em 0;
+  padding-bottom:  1.5em;
+  width: 30%;
+  background-color: white;
+}
+
+.block img {
+  width: 100%;
+  height: auto;
+  }
+
+.blocktext {
+  padding: 1.25em 1.25em 2em 1.25em;
+}
+
+.blocktext p {
+  padding: 0.75em 0
+}
+
+/* Third block - Thesis */
+#thesis {
+  margin-top: 2.67em;
+}
+
+.thesisblock {
+display: flex;
+width: 100%;
+}
+
+.thesisblock .main {
+  margin-right: 2em;
+}
+
+.title {
+  text-align: center;
+  padding: 2.67em auto;
+}
+
+.thesisvideo {
+  
+  width: 100%;
+  height: auto;
+}
+
+.thesislateral {
+  width: 40%;
+  padding-top: 2.67em;
+}
+
+video {
+  height: auto;
+  width: 100%;
 }
 
 /* Footer section */
 
 footer {
   display: flex;
-  padding: 16px 24px;
+  padding: 1.25em 2em;
   align-items: center;
   justify-content: space-between;
   border-top: lightgray 1px solid;
+  font-size: 0.75em;
 }
