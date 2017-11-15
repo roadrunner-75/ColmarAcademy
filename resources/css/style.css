@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   font-size: 12px;
   line-height: 1.4;
 }
@@ -39,10 +39,9 @@ header span {
 /* Banner section */
 
 #banner {
-  width: 100%;
+  max-width: 100%;
   background-color: lightgray;
-  display: inline-flex;
-}
+  }
 
 .content {
   display: flex;
@@ -219,7 +218,6 @@ width: 100%;
 }
 
 .thesisvideo {
-  
   width: 100%;
   height: auto;
 }
@@ -243,4 +241,126 @@ footer {
   justify-content: space-between;
   border-top: lightgray 1px solid;
   font-size: 0.75em;
+}
+
+/* Mobile responsiveness */
+
+@media only screen and (max-width: 480px) {
+  .name {
+    display: none;
+  }
+  .navdesktop {
+    display: none;
+  }
+  nav ul li {
+    padding: 0 0 0 6em;
+  }
+  #logo {
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.25em 1em;
+  }
+  .topimage {
+    max-width: 100%;
+    height: auto;
+  }
+  .content {
+    display: block;
+    padding: 0;
+  }
+  .textandbutton {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    padding: 2.67em;
+  }
+  #information {
+    display: flex;
+    width: 100%;
+  }
+  #information .main {
+    display: none;
+  }
+  .mainlateral {
+    width: 100%;
+    border-left: none;
+    padding-top: 1.25em;
+  }
+  .lateral {
+    width: 100%;
+    display: block;
+    align-items: stretch;
+    border-bottom: none;
+  }
+  .lateral3 {
+    width: 100%;
+    display: block;
+    align-items: center;
+    background-color: white;
+  }
+  .lateraltext {
+    width: 100%;
+  }
+  .lateralimage img {
+    width: 93%;
+    height: auto;
+  }
+  #learning {
+    background-color: white;
+    padding: 2em 0;
+  }
+  .blocks {
+    display: block;
+    flex-wrap: 0;
+    justify-content: space-around;
+    width: 100%;
+  }
+  .block {
+    margin: 0 1.25em;
+    padding: 0;
+    width: 83%;
+    background-color: lightgray;
+  }
+  .blocktext {
+    margin: 1.25em;
+    padding: 1.25em;
+    width: 100%;
+    background-color: lightgray;
+  }
+  .block img {
+    display: none;
+  }
+  .blocktext h3{
+    font-weight: normal;
+    }
+  .blocktext p {
+    display: none;
+  }
+  #thesis .maintext {
+    display: none;
+  }
+  #thesis .main {
+    display: block;
+    margin: 0;
+    padding: 0 0 2em 0;
+    width: 100%;
+  }
+  #thesis .title {
+    padding-bottom: 2.67em;
+  }
+  .thesislateral {
+    display: none;
+  }
+  footer {
+    font-size: 1.25em;
+    border-top: none;
+  }
+  #termsprivacy {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 480px) {
+  .navmobile {display: none;}
 }
